@@ -1,0 +1,27 @@
+{
+  "name": "hangar-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "backpack-react-scripts": "5.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
+    "lint:js": "eslint . --ignore-path .gitignore --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bpk-component-button": "^1.6.77",
+    "bpk-component-code": "^1.0.36",
+    "bpk-component-grid": "^1.1.43",
+    "bpk-component-text": "^1.0.34",
+    "bpk-mixins": "^17.2.0",
+    "bpk-stylesheets": "^3.2.80"
+  }
+}
