@@ -8,10 +8,16 @@ const API_END_POINT = "http://0.0.0.0:8080/"; // For running locally, please see
 */
 
 function makeRequest(url) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", url, false); 
-	xhttp.send();
-	return xhttp.responseText;
+	try {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET", url, false); 
+		xhttp.send();
+		return xhttp.responseText;
+	}
+	catch(err) {
+		console.log(err.message);
+		return "### Error! Could not connect to API ###"
+	}
 }
 
 module.exports = {

@@ -14,7 +14,7 @@ const App = () => (
       <BpkGridContainer>
         <BpkGridRow>
           <BpkGridColumn width={12}>
-            <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Welcome to React + Backpack</BpkText>
+            <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Welcome to hangar-ui!</BpkText>
           </BpkGridColumn>
         </BpkGridRow>
       </BpkGridContainer>
@@ -24,9 +24,8 @@ const App = () => (
         <BpkGridRow>
           <BpkGridColumn width={12}>
             <BpkText tagName="p" className={c('App__text')}>
-            /healthcheck = {api.getHealthCheck()}
+              /healthcheck = {api.getHealthCheck()}
             </BpkText>
-            <BpkButton onClick={() => alert('It works!')}>Click me</BpkButton>
           </BpkGridColumn>
         </BpkGridRow>
       </BpkGridContainer>

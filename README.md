@@ -5,9 +5,14 @@
   so please refer to [it's documentation](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
   for more usage information.
 
-# [_Put your project name here_]
+# hangar-ui
 
-[_Add a brief description of your project here._]
+This is a UI for specialedge/hangar-api.
+
+## How to run
+
+`npm install`
+`npm start`
 
 ## npm script commands
 
